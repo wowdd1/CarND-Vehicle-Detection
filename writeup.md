@@ -80,6 +80,7 @@ for fix false positives, i record heatmap for every frame, if a slide widonw be 
 
 
 merge_detections is for combining overlapping bounding boxes, first find pixels with each car_number label value, then choose the min and max of the nonzero points as a combining box
+
 ---
 
 ###Discussion
