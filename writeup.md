@@ -78,6 +78,8 @@ Here's a [link to my video result](./project_video_annotated_vehicles.mp4)
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 for fix false positives, i record heatmap for every frame, if a slide widonw be predicted as vehicle in ther current frame, but on the next frames it be predicted not a vehicle, then the value in the heatmap will small, so a frame will be compare with previous frames, after that, call label on the heatmap, it will tell us where is the vehicle, and the false positives will not be included
 
+
+merge_detections is for combining overlapping bounding boxes, first find pixels with each car_number label value, then choose the min and max of the nonzero points as a combining box
 ---
 
 ###Discussion
